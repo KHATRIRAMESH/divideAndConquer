@@ -20,3 +20,47 @@
 5. External sorting: Merge sort
 6. finding Median: QuickSelect (expected linear) or median of Medians (guaranteed linear)
 7. Searching sorted data: binary search
+
+### ADVANCED TOPICS AND OPTIMIZATIONS
+
+Parallel Divide and Conquer
+
+    . Merge Sort: Easy to parallelize (merge parallel halves)
+
+    . Quick Sort: Can parallelize partitions
+
+    Binary Search: Difficult to parallelize effectively
+
+Cache-Oblivious Algorithms
+
+    Algorithms that optimize cache usage without knowing cache parameters
+
+    Cache-oblivious Merge Sort: Uses recursive subdivision
+
+    Cache-oblivious Matrix Multiplication: Improves locality
+
+External Memory Algorithms
+
+    For data too large to fit in RAM
+
+    External Merge Sort: Uses disk I/O efficiently
+
+    B-trees: Optimized for disk access
+
+Probabilistic Analysis
+
+    Randomized algorithms: Use randomization to avoid worst case
+
+    Expected running time: Average over random choices
+
+    High probability bounds: Probability of bad case is negligible
+
+Amortized Analysis
+
+    For data structures where operations vary in cost
+
+    Aggregate method: Total cost divided by operations
+
+    Accounting method: Assign credits to operations
+
+    Potential method: Use potential function
